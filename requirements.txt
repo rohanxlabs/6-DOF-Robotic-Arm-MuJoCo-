@@ -1,0 +1,10 @@
+mujoco
+dm_control
+pink
+numpy
+scipy
+gymnasium
+stable-baselines3
+opencv-python
+matplotlib
+pyyaml
