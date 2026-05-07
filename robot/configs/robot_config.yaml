@@ -1,0 +1,26 @@
+robot:
+ name: "robot_arm"
+ model_path: "robot/models/arm.xml"
+ num_joints: 5
+ end_effector_link: "ee_site"
+ target_site: "target_site"
+
+joints:
+ name: ["joint1", "joint2", "joint3", "joint4", "joint5"]
+ limits:
+  joint1: [-3.14, 3.14]
+  joint2: [-1.57, 1.57]
+  joint3: [-1.57, 1.57]
+  joint4: [-3.14, 3.14]
+  joint5: [-3.14, 3.14]
+
+control:
+ timesteps: 0.002
+ kp: 100.0
+ kd: 10.0
+ ik_tolerance: 0.001
+ ik_max_iterations: 100
+
+simulation:
+ render_fps: 60
+ camera_name: "fixed_camera"
